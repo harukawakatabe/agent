@@ -1,9 +1,6 @@
 """数据库查询工具 - 封装为LangChain Tool"""
 from typing import Optional, List, Dict, Any
-try:
-    from langchain_core.tools import tool
-except ImportError:
-    from langchain.tools import tool
+from langchain_core.tools import tool
 from database.connection import db_connection
 from database.models import WorkoutRecord
 from database.mock_data import get_mock_records, get_today_summary, get_statistics

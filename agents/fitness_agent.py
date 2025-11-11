@@ -2,10 +2,7 @@
 from typing import Dict, Any, TypedDict, Annotated
 from langgraph.graph import StateGraph, END
 from langgraph.graph.message import add_messages
-try:
-    from langchain_core.messages import BaseMessage
-except ImportError:
-    from langchain.schema import BaseMessage
+from langchain_core.messages import BaseMessage
 import config
 from agents.nodes import (
     query_router_node,

@@ -1,9 +1,6 @@
 """数据分析工具 - 提供运动数据分析功能"""
 from typing import List, Dict, Any
-try:
-    from langchain_core.tools import tool
-except ImportError:
-    from langchain.tools import tool
+from langchain_core.tools import tool
 import json
 
 

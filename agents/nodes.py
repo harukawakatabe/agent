@@ -1,10 +1,7 @@
 """Agent节点定义 - 定义LangGraph中的各个节点"""
 from typing import Dict, Any
 from langchain_openai import ChatOpenAI
-try:
-    from langchain_core.messages import HumanMessage, AIMessage
-except ImportError:
-    from langchain.schema import HumanMessage, AIMessage
+from langchain_core.messages import HumanMessage, AIMessage
 import config
 from utils.prompts import QUERY_ROUTER_PROMPT, ANALYSIS_PROMPT, RESPONSE_PROMPT
 from tools.database_tool import DATABASE_TOOLS

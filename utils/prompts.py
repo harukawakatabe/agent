@@ -1,8 +1,5 @@
 """提示词模板 - 定义Agent使用的提示词"""
-try:
-    from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-except ImportError:
-    from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 
 # 系统提示词
